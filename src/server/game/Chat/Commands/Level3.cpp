@@ -2338,6 +2338,12 @@ bool ChatHandler::HandleBankCommand(const char* /*args*/)
     return true;
 }
 
+bool ChatHandler::HandleMailBoxCommandconst char* /*args*/)
+{
+    m_session->SendShowMailBox(m_session->GetPlayer()->GetObjectGuid());
+    return true;
+}
+
 bool ChatHandler::HandleChangeWeather(const char *args)
 {
     if (!*args)
