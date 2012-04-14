@@ -24,6 +24,7 @@
 #include "SpellAuras.h"
 #include "SpellAuraEffects.h"
 #include "SpellMgr.h"
+#define ENTRY_BLOODWORM         28017
 
 inline bool _ModifyUInt32(bool apply, uint32& baseValue, int32& amount)
 {
@@ -1229,6 +1230,7 @@ void Guardian::UpdateMaxHealth()
         case ENTRY_SUCCUBUS:    multiplicator = 9.1f;   break;
         case ENTRY_FELHUNTER:   multiplicator = 9.5f;   break;
         case ENTRY_FELGUARD:    multiplicator = 11.0f;  break;
+		case ENTRY_BLOODWORM:   multiplicator = 1.0f;   break;
         default:                multiplicator = 10.0f;  break;
     }
 
