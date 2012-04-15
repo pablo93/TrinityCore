@@ -628,7 +628,7 @@ class World
         uint16 GetConfigMaxSkillValue() const
         {
             uint8 lvl = getIntConfig(CONFIG_MAX_PLAYER_LEVEL);
-            return lvl > 60 ? 300 + ((lvl - 60) * 75) / 10 : lvl*5;
+            return lvl > 60 ? 500 + ((lvl - 60) * 75 * 90) / 10 : lvl*5;
         }
 
         void SetInitialWorldSettings();
