@@ -242,6 +242,11 @@ ScriptMgr::~ScriptMgr()
 {
 }
 
+void ScriptMgr::OnPlayerUpdateZone(Player* player, uint32 newZone, uint32 newArea)
+{
+        FOREACH_SCRIPT(PlayerScript)->OnUpdateZone(player, newZone, newArea);
+}
+
 void ScriptMgr::Initialize()
 {
     uint32 oldMSTime = getMSTime();

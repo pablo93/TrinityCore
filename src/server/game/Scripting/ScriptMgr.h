@@ -876,6 +876,7 @@ class ScriptMgr
         void OnPlayerEnterMap(Map* map, Player* player);
         void OnPlayerLeaveMap(Map* map, Player* player);
         void OnMapUpdate(Map* map, uint32 diff);
+		void OnPlayerUpdateZone(Player* player, uint32 newZone, uint32 newArea);
 
     public: /* InstanceMapScript */
 
