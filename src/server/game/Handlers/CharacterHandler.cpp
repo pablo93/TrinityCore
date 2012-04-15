@@ -841,7 +841,7 @@ void WorldSession::HandlePlayerLogin(LoginQueryHolder* holder)
         SendPacket(&data);
         sLog->outStaticDebug("WORLD: Sent motd (SMSG_MOTD)");
 		
-		//GM Announce Logon
+		//Anuncio de Conexion de GM al Servidor
 		if(pCurrChar->isGameMaster())
 		{
 			std::string msg = "<Sistema> El GaMe MasTer ";
