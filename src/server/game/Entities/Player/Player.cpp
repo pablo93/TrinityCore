@@ -23623,6 +23623,8 @@ void Player::InitGlyphsForLevel()
         value |= 0x10;
     if (level >= 80)
         value |= 0x20;
+		if (level >= 90)
+        value |= 0x30;
 
     SetUInt32Value(PLAYER_GLYPHS_ENABLED, value);
 }
