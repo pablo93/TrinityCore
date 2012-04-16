@@ -2338,9 +2338,9 @@ bool ChatHandler::HandleBankCommand(const char* /*args*/)
     return true;
 }
 
-bool ChatHandler::HandleMailBoxCommandconst char* /*args*/)
+bool ChatHandler::HandleMailBoxCommand(const char* /*args*/)
 {
-    m_session->SendShowMailBox(m_session->GetPlayer()->GetObjectGuid());
+    m_session->SendShowMailBox(m_session->GetPlayer()->GetGUID());
     return true;
 }
 

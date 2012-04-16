@@ -245,7 +245,7 @@ bool ChatHandler::HandleKickPlayerCommand(const char *args)
     else
         PSendSysMessage(LANG_COMMAND_KICKMESSAGE, playerName.c_str());
 
-    target->GetSession()->PlayerLogout(false);
+    target->GetSession()->LogoutPlayer(false);
     return true;
 }
 

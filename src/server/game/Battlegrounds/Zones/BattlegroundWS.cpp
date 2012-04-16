@@ -40,7 +40,7 @@ enum BG_WSG_Rewards
 uint32 BG_WSG_Honor[BG_HONOR_MODE_NUM][BG_WSG_REWARD_NUM] =
 {
     {20, 40, 40}, // normal honor
-    {60, 40, 80, 90}  // holiday
+    {60, 40, 90}  // holiday
 };
 
 BattlegroundWS::BattlegroundWS()
