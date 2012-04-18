@@ -66,7 +66,7 @@ enum LoginResult
 };
 
 #define POST_BC_ACCEPTED_CLIENT_BUILD            {12543}
-#define PRE_BC_ACCEPTED_CLIENT_BUILD             {5875, 6005, 0}
+#define PRE_BC_ACCEPTED_CLIENT_BUILD             {12543}
 
 enum ExpansionFlags
 {
