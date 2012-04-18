@@ -2431,10 +2431,8 @@ enum eLockSmith
 #define GOSSIP_LOST_THE_MASTERS_KEY             "I've lost my key to the Karazhan."	
 #define GOSSIP_LOST_VIOLET_HOLD_KEY             "I've lost my key to the Violet Hold."
 #define GOSSIP_LOST_ESSENCE_INFUSED_MOONSTONE   "I've lost my Essence-Infused Moonstone."
-	
-+#define GOSSIP_LOST_KEY_TO_THE_FOCUSING_IRIS    "I've lost my Key to the Focusing Iris."
-	
-+#define GOSSIP_LOST_HC_KEY_TO_THE_FOCUSING_IRIS "I've lost my Heroic Key to the Focusing Iris."
+#define GOSSIP_LOST_KEY_TO_THE_FOCUSING_IRIS    "I've lost my Key to the Focusing Iris."
+#define GOSSIP_LOST_HC_KEY_TO_THE_FOCUSING_IRIS "I've lost my Heroic Key to the Focusing Iris."
 
 class npc_locksmith : public CreatureScript
 {
