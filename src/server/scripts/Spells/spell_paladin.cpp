@@ -284,10 +284,20 @@ class spell_pal_holy_shock : public SpellScriptLoader
                         caster->CastSpell(unitTarget, sSpellMgr->GetSpellWithRank(PALADIN_SPELL_HOLY_SHOCK_R1_DAMAGE, rank), true, 0);
                 }
             }
+			SpellCastResult CheckCast()	
+            {	
+                Player* caster = GetCaster()->ToPlayer();	
+                if (GetTargetUnit())	
+                    if (Player* target = GetTargetUnit()->ToPlayer())	
+                        if (caster->GetTeam() != target->GetTeam() && !caster->IsValidAttackTarget(target))	
+                            return SPELL_FAILED_BAD_TARGETS;	
+                return SPELL_CAST_OK;	
+            }
 
             void Register()
             {
                 // add dummy effect spell handler to Holy Shock
+				OnCheckCast += SpellCheckCastFn(spell_pal_holy_shock_SpellScript::CheckCast);
                 OnEffectHitTarget += SpellEffectFn(spell_pal_holy_shock_SpellScript::HandleDummy, EFFECT_0, SPELL_EFFECT_DUMMY);
             }
         };
