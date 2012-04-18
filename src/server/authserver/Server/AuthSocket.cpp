@@ -888,7 +888,7 @@ bool AuthSocket::_HandleRealmList()
             pkt << uint8(3);
             pkt << uint8(3);
             pkt << uint8(5);
-            pkt << uint16(12340);
+            pkt << uint16(12543);
         }
 
         ++RealmListSize;
